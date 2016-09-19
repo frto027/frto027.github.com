@@ -3,6 +3,15 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<title>nothing here</title>
+	
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://v3.bootcss.com/examples/cover/cover.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+	</style>
 	<script type="text/javascript">
 	var x=0;
 	function adda(a){
@@ -66,8 +75,12 @@
 	</script>
 	</head>
 	<body>
-	<div id='tx' style="text-align:center">这里啥都没有</div>
-	<div style="text-align:center"><input id='bt' type='button' onclick="BTC()" value='测试用按钮' /></div>
-	<div id='ch' style="text-align:center"></div>
+	<div class="site-wrapper">
+	<div class="site-wrapper-inner">
+	<div class="cover-container">
+		<p id='tx' class='lead' style="text-align:center">这里啥都没有</p>
+		<div style="text-align:center"><input id='bt' type='button' onclick="BTC()" class="btn" value='测试用按钮' /></div>
+		<div id='ch' style="text-align:center"></div>
+	</div></div></div>
 	</body>
 </html>

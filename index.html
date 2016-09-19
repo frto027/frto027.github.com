@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>hello world</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>nothing here</title>
+	<script type="text/javascript">
+	var x=0;
+	function adda(a){
+	document.getElementById('ch').innerHTML=document.getElementById('ch').innerHTML+"<br />获得成就“"+a+"”";
+	}
+	function BTC(){
+		x=x+1;
+		var ib=document.getElementById('bt');
+		var t;
+		switch(x){
+			case 1:
+			t="说了啥都没有";
+			break;
+			case 2:
+			t="不信?";
+			break;
+			case 3:
+			t="好吧";
+			break;
+			case 10:
+			t="this is a test,that is all";
+			break;
+			case 11:
+			t="only this";
+			break;
+			case 12:
+			t="为什么不看看源码？";
+			break;
+			case 13:
+			t="这只是我在测试javascript而已";
+			break;
+			case 30:
+			t="你为什么不试试按个99次";
+			break;
+			case 81:
+			t="伪成就达成！"
+			adda("伪·九九归真");
+			break;
+			case 99:
+			t="那就再来900次吧"
+			adda("再来九百次");
+			break;
+			case 199:
+			t="加油"
+			adda(t);
+			break;
+			case 399:
+			t="加油加油"
+			break;
+			case 999:
+			t="也是醉了"
+			adda("九九归零");
+			case 1000:
+			x=0;
+			default:
+			t="你一共按了"+x+"次";
+			break;
+		}
+		document.getElementById('tx').innerHTML=t;
+	}
+	</script>
 	</head>
 	<body>
-	<input type='button' onclick="alert('hi')" value='look this!' />
+	<div id='tx' style="text-align:center">这里啥都没有</div>
+	<div style="text-align:center"><input id='bt' type='button' onclick="BTC()" value='测试用按钮' /></div>
+	<div id='ch' style="text-align:center"></div>
 	</body>
 </html>
